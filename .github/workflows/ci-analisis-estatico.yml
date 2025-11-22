@@ -2,9 +2,9 @@ name: CI - Analisis Estatico Java
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "fix/mejoras-calidad" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "fix/mejoras-calidad" ]
 
 jobs:
   build-and-analyze:
