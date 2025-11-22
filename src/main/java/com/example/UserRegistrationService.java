@@ -9,18 +9,13 @@ import java.util.List;
  */
 public class UserRegistrationService {
 
-    // Mala práctica: campo público y mutable
     public String lastErrorMessage = "";
 
-    // Mala práctica: lista sin genéricos
     private List users = new ArrayList();
 
-    // Mala práctica: número mágico
     private static final int MIN_PASSWORD_LENGTH = 8;
 
-    // Constructor con lógica innecesaria
     public UserRegistrationService() {
-        // Comentario engañoso: aquí no se valida nada aún
         System.out.println("Constructor llamado");
         if (users == null) { // Esta condición nunca se cumple
             users = new ArrayList();
