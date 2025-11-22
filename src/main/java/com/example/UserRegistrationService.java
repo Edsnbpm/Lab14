@@ -22,10 +22,6 @@ public class UserRegistrationService {
         }
     }
 
-    /**
-     * Registra un nuevo usuario.
-     * Retorna true si se registra, false en caso contrario.
-     */
     public boolean registerUser(String username, String password, String email) {
         // Posible NullPointerException: no se valida si username es null
         if (username.trim().isEmpty()) {
